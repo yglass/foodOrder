@@ -23,6 +23,8 @@ export class AppOrder {
           <h2>
             Your "{this.normalize(this.match.params.name)}" has been ordered, and will arrive at the time the game starts.
           </h2>
+
+          <img src="/assets/images/tracker.png" alt="Dominos Pizza Tracker"/>
         </div>
       );
     }
