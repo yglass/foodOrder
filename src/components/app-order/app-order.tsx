@@ -2,11 +2,11 @@ import { Component, Prop, h } from '@stencil/core';
 import { MatchResults } from '@stencil/router';
 
 @Component({
-  tag: 'app-profile',
-  styleUrl: 'app-profile.css',
+  tag: 'app-order',
+  styleUrl: 'app-order.css',
   shadow: true
 })
-export class AppProfile {
+export class AppOrder {
   @Prop() match: MatchResults;
 
   normalize(name: string): string {
@@ -19,7 +19,7 @@ export class AppProfile {
   render() {
     if (this.match && this.match.params.name) {
       return (
-        <div class="app-profile">
+        <div class="app-order">
           <p>
             Your "{this.normalize(this.match.params.name)}" has been ordered.
           </p>

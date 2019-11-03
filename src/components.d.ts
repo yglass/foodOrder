@@ -13,7 +13,7 @@ import {
 
 export namespace Components {
   interface AppHome {}
-  interface AppProfile {
+  interface AppOrder {
     'match': MatchResults;
   }
   interface AppRoot {}
@@ -34,10 +34,10 @@ declare global {
     new (): HTMLAppHomeElement;
   };
 
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  interface HTMLAppOrderElement extends Components.AppOrder, HTMLStencilElement {}
+  var HTMLAppOrderElement: {
+    prototype: HTMLAppOrderElement;
+    new (): HTMLAppOrderElement;
   };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
@@ -53,7 +53,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
+    'app-order': HTMLAppOrderElement;
     'app-root': HTMLAppRootElement;
     'dominos-tile': HTMLDominosTileElement;
   }
@@ -61,7 +61,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppHome {}
-  interface AppProfile {
+  interface AppOrder {
     'match'?: MatchResults;
   }
   interface AppRoot {}
@@ -74,7 +74,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-home': AppHome;
-    'app-profile': AppProfile;
+    'app-order': AppOrder;
     'app-root': AppRoot;
     'dominos-tile': DominosTile;
   }
@@ -87,7 +87,7 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-      'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
+      'app-order': LocalJSX.AppOrder & JSXBase.HTMLAttributes<HTMLAppOrderElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'dominos-tile': LocalJSX.DominosTile & JSXBase.HTMLAttributes<HTMLDominosTileElement>;
     }
