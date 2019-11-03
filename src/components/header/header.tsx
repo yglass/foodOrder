@@ -11,13 +11,7 @@ export class HeaderComponent {
       <div>
         <img class="header-logo" src="/assets/icon/logo.png" title='Dominos mini app' alt='Dominos mini app'></img>
         <div class="address">
-          Order to:
-          <br/>
-          1600 Pennsylvania Ave NW,
-          <br/>
-          Washington,
-          <br/>
-          DC 20500
+          Order to: 1600 Pennsylvania Ave NW, Washington, DC 20500
         </div>
       </div>
     ];

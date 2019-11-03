@@ -1,6 +1,11 @@
 .tile {
     margin: 1rem auto;
     width: 90%;
-    padding: 1rem 1.5rem;
     text-align: center;
+    display: block;
+}
+
+.tile img {
+    width: 40%;
+    height: 12rem;
 }

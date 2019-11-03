@@ -10,16 +10,9 @@ dominos-header > div {
 
 .header-logo {
   margin: 1rem 0;
-  margin-left: 1.5rem;
-  height: 10rem;   
+  height: 6rem;   
 }
 
 .address {
   color: #fff;
-  float: right;
-  padding: 20px;
-  width: 15rem;
-  position: absolute;
-  right: 0;
-  top: 0;
 }

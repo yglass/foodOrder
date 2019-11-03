@@ -18,20 +18,13 @@ export class Tile {
     @Prop()
     description: string;
 
-    tileClicked(event: MouseEvent) {
-        console.log('event', event)
-    }
-
     render() {
         return (
-            <div class="tile">
+            <a class="tile">
                 <img class="tile-image"
-                     width="600"
-                     height="240"
-                     onClick={this.tileClicked.bind(this)}
                      src={this.img}
                 />
-            </div>
+            </a>
         );
     }
 }
