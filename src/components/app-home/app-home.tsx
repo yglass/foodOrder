@@ -10,17 +10,17 @@ export class AppHome {
     return (
       <div class='app-home'>
         <stencil-route-link url='/order/Margarita'>
-          <dominos-tile pizza-title="Margarita" img="" price="7.99$" description="Large Margarita Pizza">
+          <dominos-tile pizza-title="Double Deal Medium" img="/assets/images/double-deal-medium.jpg" price="7.99$" description="Double deal medium pizza 2-toppings pizzas">
           </dominos-tile>
         </stencil-route-link>
 
         <stencil-route-link url='/order/Vegetables'>
-          <dominos-tile pizza-title="Vegetables" img="" price="8.99$" description="Large Vegetables Pizza">
+          <dominos-tile pizza-title="Large 3 Toppings" img="/assets/images/large-3-toppings.jpg" price="8.99$" description="Large 3 toppings pizza">
           </dominos-tile>
         </stencil-route-link>
 
         <stencil-route-link url='/order/Chicken'>
-          <dominos-tile pizza-title="Chicken" img="" price="9.99$" description="Large Chicken Pizza">
+          <dominos-tile pizza-title="Unlimited Medium" img="/assets/images/unlimited-medium.jpg" price="9.99$" description="Unlimited Medium 2 toppings">
           </dominos-tile>
         </stencil-route-link>
       </div>
