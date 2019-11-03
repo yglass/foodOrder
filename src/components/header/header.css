@@ -1,0 +1,11 @@
+dominos-header {
+  width: 100%;
+  height: 10rem;
+  background: #0A153C;
+}
+
+img {
+  margin: 1rem 0;
+  margin-left: 1.5rem;
+  height: 10rem;   
+} 
