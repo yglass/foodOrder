@@ -4,3 +4,7 @@
   color: #ffffff;
   min-height: 800px;
 }
+
+.app-order img {
+  max-width: 100%;
+}

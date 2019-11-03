@@ -1,11 +1,12 @@
 .tile {
     margin: 1rem auto;
-    width: 90%;
+    width: 100%;
     text-align: center;
     display: block;
 }
 
 .tile img {
-    width: 40%;
-    height: 12rem;
+  min-width: 40%;
+  max-width: 95%;
+  max-height: 13rem;
 }
