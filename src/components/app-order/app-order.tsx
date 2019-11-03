@@ -20,9 +20,9 @@ export class AppOrder {
     if (this.match && this.match.params.name) {
       return (
         <div class="app-order">
-          <p>
+          <h2>
             Your "{this.normalize(this.match.params.name)}" has been ordered, and will arrive at the time the game starts.
-          </p>
+          </h2>
         </div>
       );
     }

@@ -12,9 +12,6 @@ export class AppRoot {
       <div>
         <main>
           <dominos-header></dominos-header>
-          <header>
-            <h1>Your top recommendations</h1>
-          </header>
           <stencil-router>
             <stencil-route-switch scrollTopOffset={0}>
               <stencil-route url='/' component='app-home' exact={true} />

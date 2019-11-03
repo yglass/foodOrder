@@ -24,8 +24,13 @@ export class Tile {
 
     render() {
         return (
-            <div class="tile" onClick={this.tileClicked.bind(this)}>
-                <p>{this.pizzaTitle}</p>
+            <div class="tile">
+                <img class="tile-image"
+                     width="600"
+                     height="240"
+                     onClick={this.tileClicked.bind(this)}
+                     src={this.img}
+                />
             </div>
         );
     }

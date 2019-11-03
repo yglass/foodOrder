@@ -38,6 +38,16 @@ button:hover {
 }
 
 stencil-route-link a {
-  color: #888888;
   text-decoration: none;
+  outline: none;
+}
+
+stencil-route-link a .tile {
+  color: #888888;
+  transition: all .2s ease-in-out;
+}
+
+stencil-route-link a:focus .tile {
+  outline: none;
+  transform: scale(1.1);
 }

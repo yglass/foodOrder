@@ -4,8 +4,22 @@ dominos-header {
   background: #0A153C;
 }
 
-img {
+dominos-header > div {
+  text-align: center;
+}
+
+.header-logo {
   margin: 1rem 0;
   margin-left: 1.5rem;
   height: 10rem;   
-} 
+}
+
+.address {
+  color: #fff;
+  float: right;
+  padding: 20px;
+  width: 15rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
