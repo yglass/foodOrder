@@ -1,0 +1,8 @@
+.tile {
+    margin: 10px auto;
+    width: 90%;
+    padding: 10px 15px;
+    background: #ffffff;
+    border: 1px solid #f0f0f0;
+    height: 200px;
+}

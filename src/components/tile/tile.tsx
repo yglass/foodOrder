@@ -18,9 +18,13 @@ export class Tile {
     @Prop()
     description: string;
 
+    tileClicked(event: MouseEvent) {
+        console.log('event', event)
+    }
+
     render() {
         return (
-            <div>
+            <div class="tile" onClick={this.tileClicked.bind(this)}>
                 <p>{this.pizzaTitle}</p>
             </div>
         );

@@ -24,3 +24,7 @@ button:hover {
   transform: translateY(1px);
 }
 
+stencil-route-link a {
+  color: #888888;
+  text-decoration: none;
+}
