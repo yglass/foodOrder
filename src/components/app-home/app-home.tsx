@@ -5,6 +5,12 @@ import { Component, h } from '@stencil/core';
   styleUrl: 'app-home.css'
 })
 export class AppHome {
+  componentDidLoad() {
+    //WORKAROUND: we use setTimeout because for some reason componentDidLoad lifecycle method is being called too early and the dom is'not interactive yet
+    setTimeout(() => {
+      document.querySelector('a').focus();
+    }, 0)
+  }
 
   render() {
     return [
@@ -30,9 +36,9 @@ export class AppHome {
 
         <stencil-route-link url='/order/Chicken'>
           <dominos-tile pizza-title="Unlimited Medium"
-                        img="/assets/images/unlimited-medium.jpg"
-                        price="9.99$"
-                        description="Unlimited Medium 2 toppings">
+            img="/assets/images/unlimited-medium.jpg"
+            price="9.99$"
+            description="Unlimited Medium 2 toppings">
           </dominos-tile>
         </stencil-route-link>
       </div>
