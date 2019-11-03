@@ -17,6 +17,7 @@ export namespace Components {
     'match': MatchResults;
   }
   interface AppRoot {}
+  interface DominosHeader {}
   interface DominosTile {
     'description': string;
     'img': string;
@@ -46,6 +47,12 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLDominosHeaderElement extends Components.DominosHeader, HTMLStencilElement {}
+  var HTMLDominosHeaderElement: {
+    prototype: HTMLDominosHeaderElement;
+    new (): HTMLDominosHeaderElement;
+  };
+
   interface HTMLDominosTileElement extends Components.DominosTile, HTMLStencilElement {}
   var HTMLDominosTileElement: {
     prototype: HTMLDominosTileElement;
@@ -55,6 +62,7 @@ declare global {
     'app-home': HTMLAppHomeElement;
     'app-order': HTMLAppOrderElement;
     'app-root': HTMLAppRootElement;
+    'dominos-header': HTMLDominosHeaderElement;
     'dominos-tile': HTMLDominosTileElement;
   }
 }
@@ -65,6 +73,7 @@ declare namespace LocalJSX {
     'match'?: MatchResults;
   }
   interface AppRoot {}
+  interface DominosHeader {}
   interface DominosTile {
     'description'?: string;
     'img'?: string;
@@ -76,6 +85,7 @@ declare namespace LocalJSX {
     'app-home': AppHome;
     'app-order': AppOrder;
     'app-root': AppRoot;
+    'dominos-header': DominosHeader;
     'dominos-tile': DominosTile;
   }
 }
@@ -89,6 +99,7 @@ declare module "@stencil/core" {
       'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
       'app-order': LocalJSX.AppOrder & JSXBase.HTMLAttributes<HTMLAppOrderElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'dominos-header': LocalJSX.DominosHeader & JSXBase.HTMLAttributes<HTMLDominosHeaderElement>;
       'dominos-tile': LocalJSX.DominosTile & JSXBase.HTMLAttributes<HTMLDominosTileElement>;
     }
   }
